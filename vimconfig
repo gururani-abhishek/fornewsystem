@@ -120,4 +120,4 @@ colorscheme desert
  
 autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ --std=c++14 '.shellescape('%').' -o '.s
+autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ --std=c++14 '.shellescape('%').' -o '.shellescape('%:r')<CR>
